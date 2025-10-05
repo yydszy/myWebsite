@@ -2,7 +2,7 @@
   "version": 2,
   "name": "travel-blog",
   "routes": [
-    { "src": "/(.*)", "dest": "/index.html" },
-    { "src": "/imgs/(.*)", "dest": "/imgs/$1" }
+    { "src": "/imgs/(.*)", "dest": "/imgs/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
