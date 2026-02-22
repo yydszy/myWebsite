@@ -55,7 +55,7 @@
         <div class="logo">TL</div>
         <div>
           <h1>Travel Log</h1>
-          <p class="lead">张永和沈艳娜恋爱记录/p>
+          <p class="lead">张永和沈艳娜恋爱记录</p>
         </div>
       </div>
       <nav>
@@ -107,7 +107,16 @@
       {
         id:1, title:'第一次出门旅游', city:'宁波', date:'2025-09-21',
         excerpt:'在宁波的街道上，写下愿望。',
-        img:'/imgs/ningbo.jpg?w=1200&auto=format&fit=crop&q=60'
+        img:'/imgs/ningbo.jpg?w=1200&auto=format&fit=crop&q=60',
+        content:
+        `早上在杭州东站汇合，我手里拿着花。本来准备好的贺卡因为太匆忙忘记带了，有点小遗憾，不过好在花没忘，人也准时到。
+          坐高铁一个小时就到了宁波，感觉很近，说走就走的一天就这样开始了。
+          出站后先去南塘老街逛了逛。慢慢走在老街里，随便看看小店，写下心愿。没有特别的安排，但两个人一起走走停停，本身就挺舒服的。
+          中午去吃提前查好的甬上名灶，人很多，排了会儿队。取号之后去买了奶茶，一边等一边聊天。味道其实一般，没有想象中好吃，不过排队的时候也算是一段小插曲。
+          下午去了天一阁，里面好多拍婚纱照的情侣，氛围挺甜的。听说这里是十里红妆的发生地，也是麻将的发源地。逛完又去月湖划船，全程张永一个人蹬，沈艳娜坐享其成，负责欣赏风景和聊天，湖面很安静，时间也慢了下来。
+          晚上吃了海鲜面，味道不错，总算弥补了中午的落差。吃完去宁波外滩散步。夜景没有特别惊艳，但江风吹着，两个人并肩走着，其实就已经挺好。
+          没有特别轰轰烈烈的情节，就是一起坐车、排队、划船、吃面的一天。但回想起来，好像每个普通的瞬间，都因为是和你一起，而多了一点点特别。
+        `
       },
       {
         id:2, title:'国庆南昌之旅', city:'南昌', date:'2025-10-02',
@@ -155,7 +164,7 @@
       document.getElementById('modal-title').textContent = p.title;
       document.getElementById('modal-meta').textContent = p.city + ' · ' + p.date;
       document.getElementById('modal-img').src = p.img;
-      document.getElementById('modal-body').textContent = p.excerpt + '\n\n（这是测试内容，实际文章会更长。）';
+      document.getElementById('modal-body').textContent = p.excerpt + '\n\n' + p.content;
       document.getElementById('modal').classList.add('open');
     }
 
